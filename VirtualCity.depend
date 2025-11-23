@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1763874945 source:d:\arwa\programmation c\exp c++\tp2\virtualcity\main.cpp
+	<iostream>
+	"ville.h"
+	"Batiments.h"
+	"Usine.h"
+
+1763835163 source:d:\arwa\programmation c\exp c++\tp2\virtualcity\ville.cpp
+	<iostream>
+	<vector>
+	"Batiments.h"
+	"ville.h"
+
+1763835381 d:\arwa\programmation c\exp c++\tp2\virtualcity\ville.h
+	"Batiments.h"
+	<iostream>
+	<vector>
+
+1763835727 d:\arwa\programmation c\exp c++\tp2\virtualcity\batiments.h
+	<iostream>
+
+1763835163 source:d:\arwa\programmation c\exp c++\tp2\virtualcity\parc.cpp
+	<iostream>
+	"Parc.h"
+	"Batiments.h"
+
+1763835163 d:\arwa\programmation c\exp c++\tp2\virtualcity\parc.h
+	"Batiments.h"
+	<iostream>
+
+1763835163 source:d:\arwa\programmation c\exp c++\tp2\virtualcity\usine.cpp
+	<iostream>
+	"Usine.h"
+	"Batiments.h"
+
+1763835163 d:\arwa\programmation c\exp c++\tp2\virtualcity\usine.h
+	"Batiments.h"
+	<iostream>
+
+1763835310 source:d:\arwa\programmation c\exp c++\tp2\virtualcity\batiments.cpp
+	<iostream>
+	"ville.h"
+	"Batiments.h"
+
