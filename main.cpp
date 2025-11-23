@@ -2,6 +2,7 @@
 #include "ville.h"
 #include "Batiments.h"
 #include "Usine.h"
+#include "Maison.h"
 
 using namespace std;
 
@@ -12,5 +13,11 @@ int main()
     v.ajouterBatiment(u1);
     u1->afficherDetails();
     u1->calculerImpactRessources();
-    cout<<v.eau<<" "<<v.electricite;
+    cout<<v.eau<<" "<<v.electricite<<endl;;
+    cout<<endl<<"AffichageMaison"<<endl;
+    Maison* m1=new Maison(1,"Maison1", "Habitat",&v,10,10,20,5,0);
+    m1->afficherDetails();
+    cout<<endl<<"AffichageMaison après ajout"<<endl;
+    m1->ajoutHabitant(2);
+    m1->afficherDetails();
 }
