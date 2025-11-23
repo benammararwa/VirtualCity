@@ -3,7 +3,16 @@
 #include "Batiments.h"
 using namespace std;
 
-Usine::Usine(int id,string nom, string type, Ville* v,double ress, double p):Batiments(id, nom, type,v){
+Usine::Usine(int id,
+             string nom,
+             string type,
+             Ville* v,
+             double cEau,
+             double cElectricite,
+             double satisf,
+             double ress,
+             double p)
+:Batiments(id, nom, type,v,cEau,cElectricite, satisf){
     productionRessources=ress;
     pollution=p;
 }

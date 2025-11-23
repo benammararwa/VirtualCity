@@ -3,6 +3,7 @@
 #include "Batiments.h"
 #include <iostream>
 #include<vector>
+#include<string>
 
 using namespace std;
 
@@ -16,7 +17,7 @@ public:
     double satisfaction=0.2;
     double eau=15;
     double electricite=23;
-    vector<Batiments*> v;
+    vector<Batiments*> bat;
 public:
     Ville(string n, int id);
     void ajouterBatiment(Batiments* b);

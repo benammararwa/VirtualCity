@@ -11,13 +11,13 @@ Ville::Ville(string n, int id){
 }
 
 void Ville::ajouterBatiment(Batiments* b){
-    v.push_back(b);
+    bat.push_back(b);
 }
 
 void Ville::supprimerBatiment(int id){
-    for (int i = 0; i < v.size(); i++) {
-    if (v[i]->id == id) {
-        v.erase(v.begin()+i);
+    for (int i = 0; i < bat.size(); i++) {
+    if (bat[i]->id == id) {
+        bat.erase(bat.begin()+i);
         break;
     }
 }
@@ -25,16 +25,16 @@ void Ville::supprimerBatiment(int id){
 
 double Ville::calculerConsommationTotale(){
     double x=0;
-    for(int i=0;i<v.size();i++){
-        x+=v[i]->consommationEau+v[i]->consommationElectricite; //peut être on sépare l'eau et l'electricite plus tard
+    for(int i=0;i<bat.size();i++){
+        x+=bat[i]->consommationEau+bat[i]->consommationElectricite; //peut être on sépare l'eau et l'electricite plus tard
     }
     return x;
 }
 
 double Ville::calculerSatisfaction(){
     double x=0;
-    for(int i=0;i<v.size();i++){
-        x+=v[i]->effetSatisfaction;
+    for(int i=0;i<bat.size();i++){
+        x+=bat[i]->effetSatisfaction;
     }
     return satisfaction+x;
 }

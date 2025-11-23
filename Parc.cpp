@@ -5,11 +5,20 @@
 using namespace std;
 
 
-Parc::Parc(int id,string nom, string type, Ville* v,double s, double e):Batiments(id, nom, type,v){
+Parc::Parc(int id,
+            string nom,
+            string type,
+            Ville* v,
+            double cEau,
+            double cElectricite,
+            double satisf,
+            double s,
+            double e)
+:Batiments(id, nom, type, v, cEau,cElectricite, satisf){
     surface=s;
     effetBienEtre=e;
 }
 
 double Parc::ameliorerBienEtre(){
-    return effetBienEtre;
+    return effetBienEtre;//là la satisfaction change
 }
