@@ -23,7 +23,7 @@ void Ville::supprimerBatiment(int id){
 }
 }
 
-double Ville::calculerConsommationTotale(){
+double Ville::calculerConsommationTotale(){//naamloulha pair<int,int> bch taccepti 2 valeurs
     double x=0;
     for(int i=0;i<bat.size();i++){
         x+=bat[i]->consommationEau+bat[i]->consommationElectricite; //peut être on sépare l'eau et l'electricite plus tard
