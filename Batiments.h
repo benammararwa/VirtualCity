@@ -17,6 +17,7 @@ public:
     double effetSatisfaction;
     Ville* v;
 public:
+    Batiments();
     Batiments(int id,string nom, string type, Ville* v, double cEau, double cElectricite, double satisf);
     virtual void afficherDetails () const;
     void calculerImpactRessources();

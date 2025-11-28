@@ -10,7 +10,7 @@ class Maison : public Batiments {
         int habitantActuel;
 
     public :
-        Maison(int id,string nom,string  type, Ville* v,double consEau, double conElect,double effesatisf,int capacH,int habitA);
+        Maison(int id,string nom,string  type, Ville* v,double consEau, double conElect,double effesatisf,int capacH);
         void ajoutHabitant(int x);
         void retireHabitant(int x);
         void afficherDetails() const override;

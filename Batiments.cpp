@@ -3,6 +3,8 @@
 #include "Batiments.h"
 using namespace std;
 
+Batiments::Batiments(){}
+
 
 Batiments::Batiments(int id,string nom, string type, Ville* v, double cEau, double cElectricite, double satisf){
     this->id=id;

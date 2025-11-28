@@ -1,11 +1,11 @@
 #include<iostream>
 #include "Maison.h"
 
-Maison::Maison(int id,string nom,string  type, Ville* v,double consEau, double conElect,double effesatisf,int capacH,int habitA)
+Maison::Maison(int id,string nom,string  type, Ville* v,double consEau, double conElect,double effesatisf,int capacH)
 :Batiments(id,nom,type,v,consEau,conElect,effesatisf)
 {
     capaciteHabitant=capacH;
-    habitantActuel=habitA;
+    habitantActuel=0;
 }
 void  Maison::ajoutHabitant(int nb)
 {

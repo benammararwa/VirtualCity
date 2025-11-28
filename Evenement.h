@@ -4,7 +4,7 @@
 #include<string>
 #include "ville.h"
 
-class Simulation{};
+class Simulation;
 
 class Evenement {
 public:
@@ -16,13 +16,11 @@ public:
     double impactSatisfaction;
 public:
     Evenement(int i, string n, string ch, double eau, double elect, double satisf);
-    void impactEvenement(Ville v);
+    void impactEvenement(Ville& v);
 };
 
 
 #endif // EVENEMENT_H
-
-
 
 /* simulation.declencherevent(randomId);
 {recherche de randomId fl vecteur mtaa les events,
