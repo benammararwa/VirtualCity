@@ -40,3 +40,5 @@ void Simulation::demarrerCycle(int nbEvenements)
 }
 
 void Simulation::afficherEtatVille()const {/*afficher les ressources*/};
+
+void Simulation::TerminerCycle(){}

@@ -13,6 +13,7 @@ public:
 public:
     Parc(int id,string nom, string type, Ville* v,double cEau, double cElectricite, double satisf ,double s, double e);
     double ameliorerBienEtre();
+    void afficherDetails() const override;
 };
 
 #endif // PARC_H

@@ -17,6 +17,7 @@ public:
     Simulation();
     void ajouterEvenement(const Evenement& e);
     void demarrerCycle(int nbEvenements);
+    void TerminerCycle();
     void afficherEtatVille() const;
 };
 

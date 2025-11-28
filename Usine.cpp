@@ -23,3 +23,10 @@ double Usine::produireRessources(){
 double Usine::calculerPollution(){
     return pollution;
 }
+
+void Usine:: afficherDetails() const
+{
+    Batiments::afficherDetails();
+    cout << "Production Ressources: " <<productionRessources<< endl;
+    cout << "Pollution: " << pollution << endl;
+}

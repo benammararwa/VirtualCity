@@ -22,3 +22,10 @@ Parc::Parc(int id,
 double Parc::ameliorerBienEtre(){
     return effetBienEtre;//là la satisfaction change
 }
+
+void Parc:: afficherDetails() const
+{
+    Batiments::afficherDetails();
+    cout << "Surface de parc: " <<surface<< endl;
+    cout << "Effet bien être: " <<effetBienEtre<< endl;
+}

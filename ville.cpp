@@ -10,6 +10,11 @@ Ville::Ville(string n, int id){
     idVille=id;
 }
 
+Ville::Ville(const Ville &v){
+    nom=v.nom;
+    idVille=v.idVille;
+}
+
 void Ville::ajouterBatiment(Batiments* b){
     bat.push_back(b);
 }
@@ -17,6 +22,7 @@ void Ville::ajouterBatiment(Batiments* b){
 void Ville::supprimerBatiment(int id){
     for (int i = 0; i < bat.size(); i++) {
     if (bat[i]->id == id) {
+        delete bat[i];  //pour libérer l'objet
         bat.erase(bat.begin()+i);
         break;
     }

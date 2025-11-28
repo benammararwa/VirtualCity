@@ -14,12 +14,13 @@ public:
     string nom;
     double budget=100;
     long population=30; //population grande et capacité des maisons faible= habitants insatisfaits
-    double satisfaction=0.2;
+    double satisfaction=20;
     double eau=15;
     double electricite=23;
     vector<Batiments*> bat;
 public:
     Ville(string n, int id);
+    Ville(const Ville &);
     void ajouterBatiment(Batiments* b);
     void supprimerBatiment(int id);
     double calculerConsommationTotale();
