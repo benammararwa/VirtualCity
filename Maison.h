@@ -5,7 +5,7 @@
 
 
 class Maison : public Batiments {
-    private :
+    public:
         int capaciteHabitant;
         int habitantActuel;
 
